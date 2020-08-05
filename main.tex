@@ -7,7 +7,6 @@
 
 %-----------рисунки-----------
 \usepackage{graphicx}   %графика
-\usepackage{float}
 \graphicspath{{pics/}}   %папка с картинками
 \usepackage[left=1.5cm,right=1.5cm,bottom=2cm]{geometry} %настройка полей
 \usepackage{subcaption}   %несколько фрагментов на рисунке
@@ -23,7 +22,7 @@
 \usepackage{amssymb}
 \usepackage[mathscr]{eucal} % шрифт в формулах для 
 
-\usepackage{indentfirst} %отступ в первом абзаце
+%\usepackage{indentfirst} %отступ в первом абзаце
 
 %------Формат заголовков глав---
 \usepackage{titlesec}
@@ -47,6 +46,10 @@
 \newcommand{\qualProblems}{\subsection*{Качественные задачи}}
 \newcommand{\simpleProblems}{\subsection*{Задачи базового уровня}}
 \newcommand{\complexProblems}{\subsection*{Задачи повышенного уровня}}
+
+\usepackage{titlesec}
+
+\titleformat{\section}{\normalfont\fontsize{16}{15}\bfseries}{\thesection}{-10pt}{} %\filcenter
 
 \begin{document}
 
